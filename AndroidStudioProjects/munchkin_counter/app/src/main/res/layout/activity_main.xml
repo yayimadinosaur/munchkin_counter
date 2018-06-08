@@ -149,11 +149,11 @@
                 <TableRow>
 
                     <Button
-                        android:id="@+id/p1_level_minus"
+                        android:id="@+id/p1_level_sub"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/minus"
+                        android:text="@string/sub"
                         android:textSize="24sp" />
 
                     <TextView
@@ -183,11 +183,11 @@
                 <TableRow>
 
                     <Button
-                        android:id="@+id/p1_damage_minus"
+                        android:id="@+id/p1_damage_sub"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/minus"
+                        android:text="@string/sub"
                         android:textSize="24sp" />
 
                     <TextView
@@ -226,11 +226,11 @@
                 <TableRow>
 
                     <Button
-                        android:id="@+id/p2_level_minus"
+                        android:id="@+id/p2_level_sub"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/minus"
+                        android:text="@string/sub"
                         android:textSize="24sp" />
 
                     <TextView
@@ -260,11 +260,11 @@
                 <TableRow>
 
                     <Button
-                        android:id="@+id/p2_damage_minus"
+                        android:id="@+id/p2_damage_sub"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/minus"
+                        android:text="@string/sub"
                         android:textSize="24sp" />
 
                     <TextView
