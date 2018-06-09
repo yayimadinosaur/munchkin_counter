@@ -5,11 +5,14 @@
     <string name="player2">Player2</string>
     <string name="level">Level</string>
     <string name="damage">Damage</string>
+    <string name="bonus">Bonus</string>
+    <string name="total">Total</string>
     <!-- default values -->
     <string name="zero">0</string>
+    <string name="one">1</string>
     <!-- button symbols -->
     <string name="plus">+</string>
-    <string name="minus">-</string>
+    <string name="sub">-</string>
     <string name="reset">Reset</string>
     <string name="reset_p1">Reset P1</string>
     <string name="reset_p2">Reset P2</string>

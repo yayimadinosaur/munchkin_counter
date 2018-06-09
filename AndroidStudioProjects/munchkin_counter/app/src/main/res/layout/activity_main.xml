@@ -44,7 +44,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1.5"
                 android:gravity="center"
-                android:text="@string/zero"
+                android:text="@string/one"
                 android:textColor="@android:color/white"
                 android:textSize="60sp" />
 
@@ -56,16 +56,54 @@
                 android:text="@string/damage"
                 android:textColor="@android:color/white"
                 android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/player1_damage"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:gravity="center"
-                android:text="@string/zero"
-                android:textColor="@android:color/white"
-                android:textSize="60sp" />
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/bonus"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/total"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5">
+                <TextView
+                    android:id="@+id/player1_damage_bonus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@android:color/white"
+                    android:textSize="60sp" />
+                <TextView
+                    android:id="@+id/player1_damage_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/one"
+                    android:textColor="@android:color/white"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
         </LinearLayout>
         <!-- line separator -->
         <LinearLayout
@@ -102,7 +140,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1.5"
                 android:gravity="center"
-                android:text="@string/zero"
+                android:text="@string/one"
                 android:textColor="@android:color/white"
                 android:textSize="60sp" />
 
@@ -114,16 +152,53 @@
                 android:text="@string/damage"
                 android:textColor="@android:color/white"
                 android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/player2_damage"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:gravity="center"
-                android:text="@string/zero"
-                android:textColor="@android:color/white"
-                android:textSize="60sp" />
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/bonus"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/total"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5">
+                <TextView
+                    android:id="@+id/player2_damage_bonus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@android:color/white"
+                    android:textSize="60sp" />
+                <TextView
+                    android:id="@+id/player2_damage_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/one"
+                    android:textColor="@android:color/white"
+                    android:textSize="60sp" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -149,7 +224,8 @@
                 <TableRow>
 
                     <Button
-                        android:id="@+id/p1_level_sub"
+                        android:id="@+id/player1_level_sub"
+                        android:onClick="decrement_level_player1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -165,7 +241,8 @@
                         android:textSize="24sp" />
 
                     <Button
-                        android:id="@+id/p1_level_add"
+                        android:id="@+id/player1_level_add"
+                        android:onClick="increment_level_player1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -183,7 +260,8 @@
                 <TableRow>
 
                     <Button
-                        android:id="@+id/p1_damage_sub"
+                        android:id="@+id/player1_damage_sub"
+                        android:onClick="decrement_damage_bonus_player1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -199,7 +277,8 @@
                         android:textSize="24sp" />
 
                     <Button
-                        android:id="@+id/p1_damage_add"
+                        android:id="@+id/player1_damage_add"
+                        android:onClick="increment_damage_bonus_player1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -226,7 +305,8 @@
                 <TableRow>
 
                     <Button
-                        android:id="@+id/p2_level_sub"
+                        android:id="@+id/player2_level_sub"
+                        android:onClick="decrement_level_player2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -242,7 +322,8 @@
                         android:textSize="24sp" />
 
                     <Button
-                        android:id="@+id/p2_level_add"
+                        android:id="@+id/player2_level_add"
+                        android:onClick="increment_level_player2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -260,7 +341,8 @@
                 <TableRow>
 
                     <Button
-                        android:id="@+id/p2_damage_sub"
+                        android:onClick="decrement_damage_bonus_player2"
+                        android:id="@+id/player2_damage_sub"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -276,7 +358,8 @@
                         android:textSize="24sp" />
 
                     <Button
-                        android:id="@+id/p2_damage_add"
+                        android:id="@+id/player2_damage_add"
+                        android:onClick="increment_damage_bonus_player2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -301,11 +384,13 @@
                     android:id="@+id/reset_p1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="reset_p1_onClick"
                     android:text="@string/reset_p1"
                     android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/reset"
+                    android:onClick="reset_both_onClick"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/reset"
@@ -315,6 +400,7 @@
                     android:id="@+id/reset_p2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="reset_p2_onClick"
                     android:text="@string/reset_p2"
                     android:textColor="@android:color/black" />
             </TableRow>
